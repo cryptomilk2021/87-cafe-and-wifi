@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe&Wifi API</title>
+</head>
+<body>
+    <h1>Welcome to the Cafe & Wifi API</h1>
+
+
+<ul>
+        <h4><b>list of cafes</b></h4>
+{#    loop through cafes #}
+        {% for i in cafes.items() %}
+            <li class="collection-item"><a href="#">{{ i[1]["name"] }} - {{ i[1]["location"] }}</a></li>
+        {% endfor %}
+    </ul>
+
+
+
+
+</body>
+</html>
